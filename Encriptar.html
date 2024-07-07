@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Encritador</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <script src='encriptar.js'></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="title">a</span>
+        </div>
+        <div class="textarea-container">
+            <textarea id="texto" class="textarea" placeholder="Ingrese su texto aqui"></textarea>
+            <span class="hint">Solo letras minúsculas y sin acentos</span>
+            <div class="buttons-container">
+                <button onclick="encriptar()" class="button encriptar">Encriptar</button>
+                <button onclick="desencriptar()" class="button desencriptar">Desencriptar</button>
+            </div>
+        </div>
+        <div class="result-container">
+            <div class="result" id="valor">
+                Ningún mensaje fue encontrado <br>
+                <span class="result-hint">
+                    Ingresa el texto que desees encriptar o desencriptar.
+                </span>
+            </div>
+            <button onclick="copiar()" class="button copiar" id="copiarbtn">Copiar</button>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
